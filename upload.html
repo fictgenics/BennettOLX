@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Item Upload</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f1f1f1;
+      }
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+      form {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        color: #333;
+      }
+      input[type="text"],
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      }
+      input[type="file"] {
+        margin-bottom: 20px;
+      }
+      input[type="submit"] {
+        display: block;
+        background-color: #4CAF50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #3e8e41;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Item Upload</h1>
+    <form action="index.html">
+      <label for="item-name">Item Name:</label>
+      <input type="text" id="item-name" name="item-name" required><br><br>
+      <label for="item-description">Item Description:</label>
+      <textarea id="item-description" name="item-description" required></textarea><br><br>
+      <label for="item-image">Item Image:</label>
+      <input type="file" id="item-image" name="item-image" accept="image/*" required><br><br>
+      <input type="submit" value="Upload">
+    </form>
+  </body>
+</html>
